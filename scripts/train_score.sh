@@ -1,5 +1,8 @@
 CUDA_VISIBLE_DEVICES=0 python runners/trainer.py \
---data_path NOCS_DATASET_PATH \
+--data_path "/content/GenPose/data" \
+--train_source "Real" \
+--test_source "Real" \
+--val_source "Real" \
 --log_dir ScoreNet \
 --agent_type score \
 --sampler_mode ode \
